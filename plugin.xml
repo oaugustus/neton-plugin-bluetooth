@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="neton-plugin-bluetooth"
+    version="1.0.0">
+    <name>Net On Cordova Bluetooth Plugin</name>
+    <description>Cordova bluetooth plugin to send messages over bluetooth</description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo>https://github.com/oaugustus/neton-plugin-bluetooth.git</repo>
+    <issue>https://github.com/oaugustus/neton-plugin-bluetooth/issues</issue>
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/plugin.js" name="plugin">
+        <runs/>
+        <clobbers target="NetonBluetoothPlugin" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="NetonBluetoothPlugin">
+          <param name="android-package" value="br.com.neton.NetonBluetoothPlugin" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/br/com/neton/NetonBluetoothPlugin.java" target-dir="src/br/com/neton/" />
+    </platform>
+</plugin>

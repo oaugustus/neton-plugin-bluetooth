@@ -1,0 +1,11 @@
+{
+  "name": "neton-plugin-bluetooth",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "neton-plugin-bluetooth",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Cordova bluetooth plugin to send messages over bluetooth"
+}
